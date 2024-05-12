@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./Providers";
+import { Suspense } from "react";
+import Loading from "./Loading";
+import { cn } from "@/src/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html suppressHydrationWarning lang="en" className="h-full ">
+      <body cz-shortcut-listen="true" className={cn(inter.className, 'h-full')}>
+        <Suspense fallback={<Loading />}>
+          <Providers>
+            {children}
+          </Providers>
+        </Suspense>
+      </body>
     </html>
   );
 }
