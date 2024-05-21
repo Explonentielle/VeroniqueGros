@@ -5,20 +5,20 @@ import Image from "next/image"
 export const AvisClients = async () => {
 
     return (
-        <div className="flex flex-row-reverse bg-customAccent">
+        <div className="flex flex-col md:flex-row-reverse bg-customAccent my-10">
             <img
                 alt="thumbnail"
-                className="w-full md:w-[50vw] h-auto m-6"
+                className="w-[90vw] md:w-[50vw] h-auto mx-auto md:mx-2 my-6"
                 src="/media/avisimage.webp" />
-            <div className="flex items-center flex-col justify-around p-4 mr-10">
-                <LayoutTitle className="mb-4 txt-color uppercase">avis de nos clients</LayoutTitle>
+            <div className="flex items-center flex-col justify-around p-4 mr-0 md:mr-28">
+                <LayoutTitle className="mb-4 txt-color text-center uppercase">avis de nos clients</LayoutTitle>
                 <div className="flex items-center">
                     <ChevronLeft size={50} className="txt-color mr-2" />
                     <div className="flex flex-col items-center">
                         <p className="text-customColor text-xl mb-4">
                             Jhon Doe
                         </p>
-                        <p className="txt-color">
+                        <p className="txt-color text-center w-1/2">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                         </p>
                     </div>
