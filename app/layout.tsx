@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   description: "Découvrez les services de podologie offerts par Podologue Carnot, spécialisés en soins du pied.",
   keywords: "podologue, soins du pied, podologie, podologue Carnot",
   robots: "index, follow",
+  alternates: {
+    canonical: "https://www.podologuecarnot.fr/",
+  },
+  other: {
+    "google-site-verification": "SjmGOxaFZLn5v1fpAVgV2oIs9LficFS5RSkmWK6yJ10",
+  },
   openGraph: {
     title: "Podologue Carnot - Services de Podologie",
     description: "Découvrez les services de podologie offerts par Podologue Carnot, spécialisés en soins du pied.",
