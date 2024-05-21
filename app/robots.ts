@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/'],
       },
     ],
-    sitemap: 'https://acme.com/sitemap.xml',
+    sitemap: 'https://veronique-gros.vercel.app/sitemap.xml',
   };
 }

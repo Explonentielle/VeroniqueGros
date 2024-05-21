@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://veronique-gros.vercel.app
+
+# Sitemaps
+Sitemap: https://veronique-gros.vercel.app/sitemap.xml
