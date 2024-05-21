@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     canonical: "https://www.podologuecarnot.fr/",
   },
   other: {
-    "google-site-verification": "SjmGOxaFZLn5v1fpAVgV2oIs9LficFS5RSkmWK6yJ10",
+    "google-site-verification": "7HwvouvbIjXOtewjqrtCmSq0B_J5goy2E4ihR-VL0Q0",
+    
   },
   openGraph: {
     title: "Podologue Carnot - Services de Podologie",
