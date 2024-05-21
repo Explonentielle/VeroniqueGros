@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       colors: {
+        customColor: 'hsl(2 52% 56%)',
+        customAccent: 'hsl(23 11% 43%)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
