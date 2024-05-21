@@ -10,8 +10,16 @@ import { Header } from "@/src/features/layout/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Podologue Carnot - Services de Podologie",
+  description: "Découvrez les services de podologie offerts par Podologue Carnot, spécialisés en soins du pied.",
+  keywords: "podologue, soins du pied, podologie, podologue Carnot",
+  robots: "index, follow",
+  openGraph: {
+    title: "Podologue Carnot - Services de Podologie",
+    description: "Découvrez les services de podologie offerts par Podologue Carnot, spécialisés en soins du pied.",
+    url: "https://www.podologuecarnot.fr/",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
