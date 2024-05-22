@@ -29,7 +29,7 @@ export function NavBar() {
                     <NavigationMenuItem>
                         <Link href="/" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Acceuil
+                                Accueil
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>

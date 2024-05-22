@@ -6,6 +6,7 @@ import { Button } from "@/src/components/ui/button";
 import { Infos } from "@/src/features/layout/Infos";
 import { Tarifs } from "@/src/features/layout/Tarifs";
 import { HeroBanner } from "@/src/features/layout/HeroBanner";
+import { Footer } from "@/src/features/layout/Footer";
 
 export default function Home() {
   return (
@@ -17,13 +18,6 @@ export default function Home() {
 
       <Layout className="items-center">
 
-        {/* <LayoutTitle className="text-center text-customColor">Cabinet de Podologuie à Armentieres et Sailly sur la lys</LayoutTitle>
-
-        <p className="text-center">Fort d’une expérience de plus de 15 ans , Véronique Gros Hourdry vous accueille
-          dans son cabinet médical réservé à la santé de vos pieds , de votre posture et de
-          votre pratique sportive.
-        </p> */}
-
         <div className="mt-10 flex flex-col-reverse md:flex-row-reverse">
 
           <img
@@ -32,7 +26,7 @@ export default function Home() {
             src="/media/appareillage.webp" />
 
           <div className="mr-0 md:mr-6">
-            <LayoutTitle className="mb-4 text-customAccent text-center">Pourquoi consulter un Pédicure Podologue ?</LayoutTitle>
+            <LayoutTitle className="mb-4 text-primary text-center">Pourquoi consulter un Pédicure Podologue ?</LayoutTitle>
 
             <p className="mb-4 text-center"> Le pied est un organe complexe supportant à lui seul le poids du corps et
               permettant de se tenir debout et de se déplacer.
@@ -48,6 +42,14 @@ export default function Home() {
           </div>
         </div>
 
+      </Layout>
+
+      <AvisClients />
+
+      <Tarifs />
+
+      <Layout className="items-center">
+
         <div className="mt-10 flex flex-col-reverse md:flex-row">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5055.763492214056!2d2.8751285999999996!3d50.685019999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dcd68e4e437f27%3A0x8422db9e2eea7fef!2sMme%20Gros%20Hourdry%20V%C3%A9ronique!5e0!3m2!1sfr!2sfr!4v1716248117016!5m2!1sfr!2sfr"
@@ -59,7 +61,7 @@ export default function Home() {
           ></iframe>
 
           <div className="ml-0 md:ml-6 flex flex-col justify-center items-center">
-            <LayoutTitle className="mb-4 text-customAccent text-center">Le cabinet d Armentieres</LayoutTitle>
+            <LayoutTitle className="mb-4 text-customColor text-center">Le cabinet d Armentieres</LayoutTitle>
             <p className="mb-4 text-center">
               Un espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du
               sport, Posturologie et Pédicurie.
@@ -81,7 +83,7 @@ export default function Home() {
           ></iframe>
 
           <div className="ml-0 md:ml-6 flex flex-col justify-center items-center">
-            <LayoutTitle className="mb-4 text-customAccent text-center">Le cabinet de Sailly sur la Lys</LayoutTitle>
+            <LayoutTitle className="mb-4 text-primary text-center">Le cabinet de Sailly sur la Lys</LayoutTitle>
             <p className="mb-4 text-center">
               1 espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du
               sport , Posturologie et Pédicurie.
@@ -95,9 +97,9 @@ export default function Home() {
 
       <Infos />
 
-      <AvisClients />
+      <Footer />
 
-      <Tarifs />
+
     </main>
   );
 }

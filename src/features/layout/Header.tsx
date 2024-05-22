@@ -12,8 +12,8 @@ export const Header = async () => {
         <div className="flex-1">
           <Link className="flex items-center" href={"/"}>
             <Image
-              width={64}
-              height={64}
+              width={80}
+              height={80}
               src="/media/icon.png"
               alt="MateFinder logo" />
             <h2  className="pl-2 text-customColor text-xs md:text-xl iconBorder">Veronique Gros Hourdry</h2>
