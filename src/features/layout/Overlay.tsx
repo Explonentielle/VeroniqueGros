@@ -60,7 +60,7 @@ const Overlay = () => {
 
   return (
     <div
-      className="relative w-full h-[75vh] bg-cover bg-center flex items-center jutify-center"
+      className=" w-full h-[75vh] bg-cover bg-center flex items-center jutify-center mt-24"
       style={{
         backgroundImage: `url(${images[currentImageIndex]})`,
         opacity: opacity,

@@ -1,29 +1,51 @@
-import Image from "next/image"
-import { Layout } from "@/src/components/Layout"
-import { ModeToggle } from "../theme/ModeToggle"
-import Link from "next/link"
-import { NavBar } from "./NavBar"
+"use client"
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { Layout } from "@/src/components/Layout";
+import { ModeToggle } from "../theme/ModeToggle";
+import Link from "next/link";
+import { NavBar } from "./NavBar";
 
-export const Header = async () => {
+export const Header = () => {
+  const [imageSize, setImageSize] = useState(80); 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setImageSize(90); 
+      } else {
+        setImageSize(60); 
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="w-full border-b border-border px-4">
+    <header className="fixed top-0 w-full border-b border-border px-4 bg-background">
       <Layout className="flex py-0 flex-row items-center gap-4">
         <div className="flex-1">
           <Link className="flex items-center" href={"/"}>
             <Image
-              width={80}
-              height={80}
+              width={imageSize} 
+              height={imageSize} 
               src="/media/icon.png"
-              alt="MateFinder logo" />
-            <h2  className="pl-2 text-customColor text-xs md:text-xl iconBorder">Veronique Gros Hourdry</h2>
+              alt="MateFinder logo"
+            />
+            <h2 className="pl-2 text-customColor text-xs md:text-xl iconBorder">
+              Veronique Gros Hourdry
+            </h2>
           </Link>
         </div>
         <NavBar />
         <div className="flex items-center gap-2">
-          <ModeToggle/>
+          <ModeToggle />
         </div>
       </Layout>
     </header>
-  )
-}
+  );
+};

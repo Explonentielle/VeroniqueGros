@@ -23,7 +23,7 @@ export function NavBar() {
                 className={cn("mr-6", {
                     hidden: !menuOpen,
                     block: menuOpen,
-                    "md:block absolute top-20 md:top-0 -right-5 md:left:0 md:relative": true,
+                    "md:block absolute top-0 -right-6 md:left:0 md:relative h-full bg-background": true,
                 })} >
                 <NavigationMenuList>
                     <NavigationMenuItem>
@@ -118,7 +118,7 @@ export function NavBar() {
 
             <div className="md:hidden flex items-center">
                 <Button onClick={toggleMenu} variant={'ghost'} className="p-2">
-                    {menuOpen ? <Cross className="rotate-45 h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                    {menuOpen ? <Cross className="absolute top-10 right-5 rotate-45 h-6 w-6 z-10" /> : <Menu className="h-6 w-6" />}
                 </Button>
             </div>
 
