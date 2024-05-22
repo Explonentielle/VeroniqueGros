@@ -7,7 +7,7 @@ import Link from "next/link";
 import { NavBar } from "./NavBar";
 
 export const Header = () => {
-  const [imageSize, setImageSize] = useState(80); 
+  const [imageSize, setImageSize] = useState(90); 
 
   useEffect(() => {
     const handleScroll = () => {
