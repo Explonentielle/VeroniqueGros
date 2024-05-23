@@ -10,11 +10,11 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'Applebot',
-        disallow: ['/'],
+        allow: ['/'],
       },
       {
         userAgent: 'Bingbot',
-        disallow: ['/'],
+        allow: ['/'],
       },
     ],
     sitemap: 'https://veronique-gros.vercel.app/sitemap.xml',

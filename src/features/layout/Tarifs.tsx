@@ -1,6 +1,7 @@
 
 import LucideIcons, { IconName } from "@/src/components/LucideIcons"
 import { Card, CardContent, CardDescription, CardTitle } from "@/src/components/ui/card"
+import { HandCoins, WalletCards } from "lucide-react"
 import Image from "next/image"
 
 
@@ -37,9 +38,9 @@ export const Tarifs = async () => {
                     <CardDescription className="text-background text-xl text-center my-4">Pédicure - Posturologue - Podologue</CardDescription>
                     <CardDescription className="text-primary uppercase font-extrabold text-xl text-center my-4">Moyens de payement</CardDescription>
                     <div className="flex justify-center items-around my-8">
-                        <LucideIcons name={"HandCoins" as IconName} size={64} color="background" />
+                        <HandCoins size={64} color="background" strokeWidth={1}/>
                         <div className="mx-6"></div>
-                        <LucideIcons name={"WalletCards" as IconName} size={64} color="background" />
+                        <WalletCards size={64} color="background" strokeWidth={1}/>
                     </div>
                 </CardContent>
             </Card>
