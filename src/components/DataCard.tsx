@@ -25,7 +25,7 @@ export const DataCard: FC<DataCardProps> = ({ title, info, description, descript
                 <ul className="flex flex-wrap w-2/3 justify-start my-6">
                     {list.map((item) => {
                         return (
-                            <li className="mx-4">- {item}</li>
+                            <li key={item} className="mx-4">- {item}</li>
                         )
                     })}
 
