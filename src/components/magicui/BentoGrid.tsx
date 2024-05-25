@@ -59,13 +59,13 @@ const BentoCard = ({
   >
     <div>{background}</div>
     <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
-      <Icon   className={`max-w-lg ${txtColor === "light" ? "h-12 w-12 origin-left transform-gpu text-background transition-all duration-300 ease-in-out group-hover:scale-75" : "h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75"}`}/>
+      <Icon   className={`max-w-lg ${txtColor === "light" ? "h-12 w-12 origin-left transform-gpu text-background dark:text-white transition-all duration-300 ease-in-out group-hover:scale-75" : "h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75"}`}/>
       <h3  className={`max-w-lg ${txtColor === "light" ? "text-xl font-semibold text-background dark:text-neutral-300" : "text-xl font-semibold text-neutral-700 dark:text-neutral-300"}`}>
         {name}
       </h3>
-      <p className={`max-w-lg ${txtColor === "light" ? "text-background font-light" : "text-neutral-500"}`}>{description}</p>
-      <p className={`max-w-lg ${txtColor === "light" ? "text-background font-light" : "text-neutral-500"}`}>{descriptionb}</p>
-      <p className="max-w-lg text-xs text-gray-800">{descriptionc}</p>
+      <p className={`max-w-lg ${txtColor === "light" ? "text-background dark:text-white font-light" : "text-neutral-500"}`}>{description}</p>
+      <p className={`max-w-lg ${txtColor === "light" ? "text-background dark:text-white font-light" : "text-neutral-500"}`}>{descriptionb}</p>
+      <p className="max-w-lg text-xs text-gray-800 dark:text-white">{descriptionc}</p>
     </div>
  
     <div
