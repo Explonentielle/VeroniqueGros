@@ -13,7 +13,7 @@ const reviews = [
         name: "frédéric cornez",
         username: "@frédéric cornez",
         body: "Très satisfait car nette amélioration de mes douleurs après 3 mois d’utilisation des semelles fournies. Très clair dans ses explications, je ne connaissais pas la prise en charge posturale. Je recommande fortement.",
-        img: "https://avatar.vercel.sh/jill",
+        img: "https://lh3.googleusercontent.com/a-/ALV-UjUSruw7QFi_RL3n7mMWn0N1V7m8dl_kR7uMl2OOB41TItKVuT_3=s64-c-rp-mo-br100",
     },
     {
         name: "Florian Haese",
@@ -25,7 +25,7 @@ const reviews = [
         name: "Adrif Mehdi",
         username: "@Adrif Mehdi",
         body: "Trés podologue très sérieux et à l'écoute de ses patients. Très satisfait des résultats, je recommande fortement ce podologue très compétent qui a permis à mon fils de faire sa compétition . Un grand merci à elle .",
-        img: "https://avatar.vercel.sh/jane",
+        img: "https://lh3.googleusercontent.com/a-/ALV-UjWf5nSEUKrI0_llaVgv9ojOK8Dng7zyC99p8QqxDcj4UB_-luO8=s64-c-rp-mo-br100",
     },
 ];
 
@@ -52,7 +52,7 @@ export const AvisClients = () => {
             </div>
 
             <div className="pt-5">
-                <LayoutTitle className="my-10 text-primary text-center uppercase">avis de nos clients</LayoutTitle>
+                <LayoutTitle className="my-10 text-primary text-center uppercase">Avis clients</LayoutTitle>
             </div>
         </div>
     );

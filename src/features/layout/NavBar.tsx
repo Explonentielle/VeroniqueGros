@@ -23,9 +23,9 @@ export function NavBar() {
                 className={cn("mr-6", {
                     hidden: !menuOpen,
                     block: menuOpen,
-                    "md:block absolute top-0 -right-6 md:left:0 md:relative h-full bg-background": true,
+                    "md:block absolute top-0 right-0 md:left:0 md:relative h-full bg-background": true,
                 })} >
-                <NavigationMenuList>
+                <NavigationMenuList className="max-w-[90vw] flex flex-wrap">
                     <NavigationMenuItem>
                         <Link href="/" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -77,7 +77,7 @@ export function NavBar() {
                                     <NavigationMenuLink asChild>
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                            href="/pédicure"
+                                            href="/pedicure"
                                         >
                                             <div className="mb-2 text-lg font-medium">
                                                 Pédicure
@@ -93,6 +93,35 @@ export function NavBar() {
                                 </ListItem>
                                 <ListItem href="/pedicurie" title="Prise en charge des patients diabétiques">
                                     Soins patients diabétiques.
+                                </ListItem>
+                            </ul>
+                        </NavigationMenuContent>
+                    </NavigationMenuItem>
+
+                    <NavigationMenuItem>
+                        <NavigationMenuTrigger>Appareillages</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                <li className="row-span-3">
+                                    <NavigationMenuLink asChild>
+                                        <a
+                                            className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                            href="/appareillage"
+                                        >
+                                            <div className="mb-2 text-lg font-medium">
+                                                Appareillages
+                                            </div>
+                                            <p className="text-sm mb-2 leading-tight text-muted-foreground">
+                                                un appareillage sur mesure vous est proposé
+                                            </p>
+                                        </a>
+                                    </NavigationMenuLink>
+                                </li>
+                                <ListItem href="/appareillage" title="Orthonyxie">
+                                    Orthonyxie,  Orteils en griffes, ongles déformés.
+                                </ListItem>
+                                <ListItem href="/appareillage" title="Orthoplastie">
+                                    Orthoplastie, cors douloureux,  incarnés.
                                 </ListItem>
                             </ul>
                         </NavigationMenuContent>
