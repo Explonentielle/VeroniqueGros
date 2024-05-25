@@ -117,10 +117,10 @@ export function NavBar() {
                                         </a>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/appareillage" title="Orthonyxie">
+                                <ListItem href="/appareillage#orthonyxie" title="Orthonyxie">
                                     Orthonyxie,  Orteils en griffes, ongles déformés.
                                 </ListItem>
-                                <ListItem href="/appareillage" title="Orthoplastie">
+                                <ListItem href="/appareillage#orthoplastie" title="Orthoplastie">
                                     Orthoplastie, cors douloureux,  incarnés.
                                 </ListItem>
                             </ul>
@@ -135,7 +135,7 @@ export function NavBar() {
                                     <NavigationMenuLink asChild>
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                            href="/cabinet"
+                                            href="/cabinet#parcour"
                                         >
                                             <div className="mb-2 text-lg font-medium">
                                                 Mon parcours
@@ -146,10 +146,10 @@ export function NavBar() {
                                         </a>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/cabinet" title="Cabinet d’Armentières">
+                                <ListItem href="/cabinet#armentieres" title="Cabinet d’Armentières">
                                     78 rue Saidi Carnot 59 280 ARMENTIERE
                                 </ListItem>
-                                <ListItem href="/cabinet" title="Cabinet de Sailly sur la Lys">
+                                <ListItem href="/cabinet#sailly" title="Cabinet de Sailly sur la Lys">
                                     2390 rue de la lys 62 840 SAILLY SUR LA LYS
                                 </ListItem>
                             </ul>

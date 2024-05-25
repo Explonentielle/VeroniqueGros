@@ -44,7 +44,7 @@ const dataAppc =
     title: "",
     description: "En fonction des problèmes posés et après avoir effectué les soins qui s’imposent, le podologue peut être amené à isoler la zone de frottement afin de soulager les kératomes (cors, durillons, œil de perdrix.).",
     descriptionb: "Le podologue réalisera une « orthoplastie » : orthèse amovible que le patient doit porter dans la journée.",
-    info: "C’est une orthèse souple ou semi rigide de repositionnement d’orteils ou de protection, modelée sur le pied et façonnée en élastomère de silicone L’orthoplastie peut être protectrice (pour une griffe d’orteil irréductible) ou correctrice (pour une griffe réductible)", 
+    info: "C’est une orthèse souple ou semi rigide de repositionnement d’orteils ou de protection, modelée sur le pied et façonnée en élastomère de silicone L’orthoplastie peut être protectrice (pour une griffe d’orteil irréductible) ou correctrice (pour une griffe réductible)",
     className: "md:flex-row-reverse",
 }
 
@@ -54,10 +54,12 @@ export default function RouteParams(props: PageParams<{}>) {
         <div>
             <Overlay />
 
-            <DataContainer img="/media/orthonyxie.jpg" data={dataApp} />
-
-            <DataContainer img="/media/orthoplastie.jpg" data={dataAppb} />
-
+            <section id="orthonyxie">
+                <DataContainer img="/media/orthonyxie.jpg" data={dataApp} />
+            </section>
+            <section id="orthoplastie">
+                <DataContainer img="/media/orthoplastie.jpg" data={dataAppb} />
+            </section>
             <DataContainer img="" data={dataAppc} withImg={false} />
 
 

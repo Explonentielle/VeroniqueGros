@@ -3,6 +3,7 @@ import { Card, CardDescription, CardTitle } from "./ui/card";
 import LucideIcons, { IconName } from "./LucideIcons";
 import { Button } from "./ui/button";
 import { LayoutTitle } from "./Layout";
+import Link from "next/link";
 
 type MapCardProps = {
     title: string;
@@ -32,7 +33,8 @@ export const MapCard: FC<MapCardProps> = ({ title, info, adress, iframe, classNa
                 <p className="mt-4 text-center">
                     {adress}
                 </p>
-                <Button className="my-4" variant={'outline'}>prendre rendez vous</Button>
+                
+                <Button className="my-4" variant={'outline'}><Link target="blank" href="https://www.doctolib.fr/pedicure-podologue/armentieres/veronique-hourdry/booking/places?specialityId=8&telehealth=false&bookingFunnelSource=profile">prendre rendez vous</Link></Button>
             </div>
         </div>
     );

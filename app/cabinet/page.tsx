@@ -48,12 +48,16 @@ export default function RouteParams(props: PageParams<{}>) {
     return (
         <div>
             <Overlay />
+            <section id="armentieres">
+                <DataContainer img="/media/cabinetarm.jpeg" data={dataCabinet} />
+            </section>
+            <section id="sailly">
+                <DataContainer img="/media/sailly.png" data={dataCabinetb} />
+            </section>
 
-            <DataContainer img="/media/cabinetarm.jpeg" data={dataCabinet} />
-
-            <DataContainer img="/media/sailly.png" data={dataCabinetb} />
-
-            <DataContainer img="/media/icon.png" data={dataCabinetc} />
+            <section id="parcour">
+                <DataContainer img="/media/icon.png" data={dataCabinetc} />
+            </section>
 
             <AvisClients />
 

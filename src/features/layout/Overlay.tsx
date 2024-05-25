@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Card, CardDescription, CardTitle } from '@/src/components/ui/card';
 import { Button } from '@/src/components/ui/button';
+import Link from 'next/link';
 
 const Overlay = () => {
 
@@ -77,7 +78,7 @@ const Overlay = () => {
           <CardTitle className='text-3xl font-bold text-customColor uppercase m-4'>{cleanPathname(pathname)}</CardTitle>
         }
         <CardDescription>
-          <Button variant={'default'}>Prendre Rendez-vous</Button>
+          <Button variant={'default'}><Link target="blank" href="https://www.doctolib.fr/pedicure-podologue/armentieres/veronique-hourdry/booking/places?specialityId=8&telehealth=false&bookingFunnelSource=profile">prendre rendez vous</Link></Button>
         </CardDescription>
       </Card>
     </div>
