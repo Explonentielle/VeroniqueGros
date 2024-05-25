@@ -15,7 +15,6 @@ export default function RouteParams(props: PageParams<{}>) {
 
             <Tarifs />
 
-            <Infos />
 
             <Footer />
             

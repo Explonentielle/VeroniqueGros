@@ -26,7 +26,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full border-b border-border px-4 bg-background">
+    <header className="fixed top-0 w-full border-b border-border px-4 bg-background z-50">
       <Layout className="flex py-0 flex-row items-center gap-4">
         <div className="flex-1">
           <Link className="flex items-center" href={"/"}>

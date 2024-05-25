@@ -1,50 +1,92 @@
 
-import LucideIcons, { IconName } from "@/src/components/LucideIcons"
-import { Card, CardContent, CardDescription, CardTitle } from "@/src/components/ui/card"
-import { HandCoins, WalletCards } from "lucide-react"
-import Image from "next/image"
 
+import { BentoCard, BentoGrid } from "@/src/components/magicui/BentoGrid";
+import { AlarmClock, Bone, BriefcaseMedical, Footprints, MapPin, Phone } from "lucide-react";
 
-export const Tarifs = async () => {
+const features = [
+    {
+        Icon: Footprints,
+        name: "PÉDICURIE",
+        description: " Soins au cabinet : 36 €",
+        href: "/pedicurie",
+        cta: "Learn more",
+        background: <img src="/media/pedicurie.webp" className="absolute h-full opacity-20" />,
+        className: "lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-2",
+    },
+    {
+        Icon: Bone,
+        name: "PODOLOGIE",
+        description: " Semelles orthopédique : 94 €",
+        descriptionb: "Semelles orthopédique + Bilan : 130 €",
+        href: "/podologie",
+        cta: "Learn more",
+        background: <img src="/media/podologie.webp" className="absolute h-full opacity-20" />,
+        className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    },
+    {
+        Icon: BriefcaseMedical ,
+        name: "Général :",
+        description: "Orthoplastie : 70€",
+        descriptionb: "Orthonyxie : 36€ ",
+        descriptionc: "Conventionné par la sécurité social pour les soins de pédicurie pour les diabétiques.",
+        href: "/podologie",
+        cta: "Learn more",
+        background: <img src="/media/appareillage.webp" className="absolute h-full opacity-20" />,
+        className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-3",
+    },
+    {
+        Icon: MapPin,
+        name: "Cabinet d'armentieres",
+        description:"78 rue Saidi Carnot 59 280 ARMENTIERES",
+        txtColor: "light",
+        href: "/cabinet",
+        cta: "Learn more",
+        background: <img className=" absolute -right-20 -top-20 opacity-60" />,
+        className: "bg-customColor lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2",
+    },
+    {
+        Icon: MapPin,
+        name: "Cabinet de Sailly",
+        description:" 2390 rue de la lys  62 840 SAILLY SUR LA LYS",
+        txtColor: "light",
+        href: "/cabinet",
+        cta: "Learn more",
+        background: <img className="absolute -right-20 -top-20 opacity-60" />,
+        className: "bg-primary text-background lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
+    },
+    {
+        Icon: Phone ,
+        name: "Téléphone",
+        description:"06 33 48 66 53",
+        descriptionb:"03 21 25 79 45",
+        txtColor: "light",
+        href: "/cabinet",
+        cta: "Learn more",
+        background: <img className="absolute -right-20 -top-20 opacity-60" />,
+        className: "bg-primary text-background lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-4",
+    },
+    {
+        Icon: AlarmClock ,
+        name: "Horaires",
+        description:"Du Lundi au Vendredi de 8h à 19h",
+        descriptionb:"Sur rendez-vous uniquement Soins à domicile possible",
+        txtColor: "light",
+        href: "/cabinet",
+        cta: "Learn more",
+        background: <img className="absolute -right-20 -top-20 opacity-60" />,
+        className: "bg-customColor text-background lg:col-start-1 lg:col-end-3 lg:row-start-3 lg:row-end-4",
+    },
+];
 
+export async function Tarifs() {
     return (
-        <div className="flex items-center justify-center h-full md:h-[65vh] p-4">
-            <Card className="text-background flex flex-col md:flex-row w-full md:w-2/3 h-auto mb-10 shadow-lg">
-                <CardContent className="bg-primary w-full md:w-2/5 rounded-t-lg md:rounded-r-none md:rounded-l-lg  flex flex-col justify-center ">
-                    <CardTitle className="my-6  text-4xl text-center">Tarifs</CardTitle>
-                    <CardContent>
-                        <CardTitle className="my-2">PÉDICURIE</CardTitle>
-                        <CardDescription className="text-background">Soins au cabinet : 36 €</CardDescription>
-                    </CardContent>
-
-                    <CardContent>
-                        <CardTitle className="my-2">PODOLOGIE</CardTitle>
-                        <CardDescription className="text-background" >Semelles orthopédique : 94 €</CardDescription>
-                        <CardDescription className="text-background" >Semelles orthopédique + Bilan : 130 €</CardDescription>
-                    </CardContent>
-
-                    <CardContent>
-                        <CardTitle className="my-2">Général :</CardTitle>
-                        <CardDescription className="text-background">Orthoplastie :70€</CardDescription>
-                        <CardDescription className="text-background">Orthonyxie : 36€</CardDescription>
-                        <p className="text-xs text-gray-200 my-2">Conventionné par la sécurité social pour les soins de pédicurie pour les diabétiques.</p>
-                    </CardContent>
-                </CardContent>
-                <CardContent className="bg-customColor w-full md:w-3/5 rounded-b-lg md:rounded-l-none md:rounded-r-lg">
-
-                    <CardContent className="flex justify-center items-center">
-                        <CardTitle className="w-1/2 text-3xl text-center font-light mt-16">Véronique Gros Hourdry</CardTitle>
-                    </CardContent>
-                    <CardDescription className="text-background text-xl text-center my-4">Pédicure - Posturologue - Podologue</CardDescription>
-                    <CardDescription className="text-primary uppercase font-extrabold text-xl text-center my-4">Moyens de payement</CardDescription>
-                    <div className="flex justify-center items-around my-8">
-                        <HandCoins size={64} color="background" strokeWidth={1}/>
-                        <div className="mx-6"></div>
-                        <WalletCards size={64} color="background" strokeWidth={1}/>
-                    </div>
-                </CardContent>
-            </Card>
-
+        <div className="w-full md:w-2/3 mx-auto p-4">
+            <BentoGrid className="lg:grid-rows-3">
+                {features.map((feature) => (
+                    <BentoCard key={feature.name} {...feature} />
+                ))}
+            </BentoGrid>
         </div>
-    )
+
+    );
 }

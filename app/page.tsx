@@ -95,8 +95,6 @@ export default function Home() {
 
       </Layout>
 
-      <Infos />
-
       <Footer />
 
 

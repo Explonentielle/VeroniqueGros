@@ -48,8 +48,8 @@ export function NavBar() {
                                                 Podologie
                                             </div>
                                             <p className="text-sm leading-tight text-muted-foreground">
-                                                La podologie est une approche médicale relative la prévention au
-                                                diagnostic et la prise en charge de pathologie de l’appareil locomoteur.
+                                                Spécialité des troubles et des affections de l’appareil locomoteur, de la petite enfance
+                                                au sujet âgé. Votre podologue est là pour vous soulager.
                                             </p>
                                         </a>
                                     </NavigationMenuLink>
@@ -58,12 +58,12 @@ export function NavBar() {
                                     La podologie du sport est une spécialité de la podologie qui se concentre
                                     sur le traitement et la prévention des blessures en lien avec la pratique sportive.
                                 </ListItem>
-                                <ListItem href="/appareillage" title="Appareillages">
-                                    Orthonyxie, Orthoplastie
-                                </ListItem>
                                 <ListItem href="/posturologie" title="Posturologie ">
                                     discipline étudiant la position et l’équilibre de l’homme debout
                                     en statique et en mouvement.
+                                </ListItem>
+                                <ListItem href="/Podo-pédiatrie" title="Podo-pédiatrie ">
+                                    Podo-pédiatrie
                                 </ListItem>
                             </ul>
                         </NavigationMenuContent>
@@ -77,16 +77,13 @@ export function NavBar() {
                                     <NavigationMenuLink asChild>
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                            href="/cabinet"
+                                            href="/pédicure"
                                         >
                                             <div className="mb-2 text-lg font-medium">
-                                                Le cabinet
+                                                Pédicure
                                             </div>
                                             <p className="text-sm mb-2 leading-tight text-muted-foreground">
-                                                78 rue Sadi Carnot 59280 ARMENTIERES                           
-                                            </p>
-                                            <p className="text-sm leading-tight text-muted-foreground">                                              
-                                                2390 rue de la lys 62840 SAILLY SUR LA LYS
+                                                Un soin des pieds et des ongles adaptés à tous et à toutes les situations
                                             </p>
                                         </a>
                                     </NavigationMenuLink>
@@ -94,25 +91,43 @@ export function NavBar() {
                                 <ListItem href="/pedicurie" title="Pédicure">
                                     Quand et pourquoi consulter un pédicure podologue ?
                                 </ListItem>
-                                <ListItem href="/pedicurie" title="Type de consultations">
-                                    soins médicaux à part entière, préventifs ou curatifs adaptés
-                                    à chaque patient selon l’affection dont il souffre.
-                                </ListItem>
                                 <ListItem href="/pedicurie" title="Prise en charge des patients diabétiques">
-                                    Votre podologue est agréée pour votre prise en charge.
+                                    Soins patients diabétiques.
+                                </ListItem>
+                            </ul>
+                        </NavigationMenuContent>
+                    </NavigationMenuItem>
+
+                    <NavigationMenuItem>
+                        <NavigationMenuTrigger>Le Cabinet</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                <li className="row-span-3">
+                                    <NavigationMenuLink asChild>
+                                        <a
+                                            className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                            href="/cabinet"
+                                        >
+                                            <div className="mb-2 text-lg font-medium">
+                                                Mon parcours
+                                            </div>
+                                            <p className="text-sm mb-2 leading-tight text-muted-foreground">
+                                                Fort d’une expérience de plus de 15 ans, Véronique Gros Hourdry vous accueille dans son cabinet médical
+                                            </p>
+                                        </a>
+                                    </NavigationMenuLink>
+                                </li>
+                                <ListItem href="/cabinet" title="Cabinet d’Armentières">
+                                    78 rue Saidi Carnot 59 280 ARMENTIERE
+                                </ListItem>
+                                <ListItem href="/cabinet" title="Cabinet de Sailly sur la Lys">
+                                    2390 rue de la lys 62 840 SAILLY SUR LA LYS
                                 </ListItem>
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
 
 
-                    <NavigationMenuItem>
-                        <Link href="/contact" legacyBehavior passHref>
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Contact
-                            </NavigationMenuLink>
-                        </Link>
-                    </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
 
