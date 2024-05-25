@@ -12,7 +12,7 @@ export default function RouteParams(props: PageParams<{}>) {
         <div>
             <Layout className="flex flex-col justify-center items-center">
                 <LayoutTitle className="mt-36 text-primary font-bold text-4xl">Mentions légales</LayoutTitle>
-                <p> Nouveau En vertu de l'article 6 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site Internet  www.pedicure-podologue-gerard.fr l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
+                <p> Nouveau En vertu de l'article 6 de la loi n 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site Internet  www.pedicure-podologue-gerard.fr l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
                 <p> Éditeur : Madame Veronique Gros Hourdry -</p>
                 <p> Capital social de : 1000 €</p>
                 <p> TVA : - </p>
