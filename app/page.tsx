@@ -23,7 +23,7 @@ export default function Home() {
 
       <HeroBanner />
 
-      <DataContainer img="/media/appareillage.webp" data={dataHome} />
+      <DataContainer img="/media/pourquoi.webp" data={dataHome} />
 
       <AvisClients />
 

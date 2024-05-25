@@ -1,16 +1,59 @@
 import { AvisClients } from "@/src/features/layout/AvisClients";
+import { DataContainer } from "@/src/features/layout/DataContainer";
 import { Footer } from "@/src/features/layout/Footer";
-import { Infos } from "@/src/features/layout/Infos";
 import { MapContainer } from "@/src/features/layout/MapContainer";
 import Overlay from "@/src/features/layout/Overlay";
 import { Tarifs } from "@/src/features/layout/Tarifs";
 import type { PageParams } from "@/src/types/next";
 
 
+const dataCabinet =
+{
+    title: "LE CABINET D'ARMENTIERES:",
+    description: "1 espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du sport , Posturologie et Pédicurie",
+    descriptionb: "78 rue Saidi Carnot 59280 ARMENTIERES tel 0633486653",
+    info: "Horaires Du Lundi au Vendredi de 8h à 19h Sur rendez-vous uniquement Soins à domicile possible",
+    className: "md:flex-row-reverse",
+}
+
+const dataCabinetb =
+{
+    title: "LE CABINET DE SAILLY:",
+    description: "1 espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du sport , Posturologie et Pédicurie",
+    descriptionb: "2390 rue de la lys 62 840 SAILLY SUR LA LYS",
+    info: "Horaires Du Lundi au Vendredi de 8h à 19h Sur rendez-vous uniquement Soins à domicile possible",
+    className: "md:flex-row",
+}
+
+
+const dataCabinetc =
+{
+    title: "",
+    description: "Plus de 15 ans d’expériences, de nombreuses formations, je mets mon expertise à votre services :",
+    descriptionb: " ",
+    subtitleb: "Mes diplômes :",
+    info: "",
+    className: "md:flex-row-reverse",
+    list: [
+        "D.I.U de Posturologie clinique",
+        "D.U de podologie du sport",
+        "Thérapie Manuelle et Ktaping",
+        "Podopédiatrie",
+        "Membre actif de l’association de podologues du sport « Podoxygene »",
+        "Soins de terrains (ultra trail)",
+    ],
+}
+
 export default function RouteParams(props: PageParams<{}>) {
     return (
         <div>
             <Overlay />
+
+            <DataContainer img="/media/cabinetarm.jpeg" data={dataCabinet} />
+
+            <DataContainer img="/media/sailly.png" data={dataCabinetb} />
+
+            <DataContainer img="/media/icon.png" data={dataCabinetc} />
 
             <AvisClients />
 
@@ -23,3 +66,4 @@ export default function RouteParams(props: PageParams<{}>) {
         </div>
     );
 }
+

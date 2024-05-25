@@ -5,14 +5,18 @@ import { MapContainer } from "@/src/features/layout/MapContainer";
 import Overlay from "@/src/features/layout/Overlay";
 import { Tarifs } from "@/src/features/layout/Tarifs";
 import type { PageParams } from "@/src/types/next";
+import { Subtitles } from "lucide-react";
 
 
 const dataPodo =
 {
     title: "PODOLOGIE",
-    description: "QUOI:  La podologie est une approche médicale relative à l’étude, la prévention, le diagnostic et la prise en charge adaptée des pathologies de l’appareil locomoteur.",
-    descriptionb: "POURQUOI:  Un Bilan podologique permet une évaluation complète du système locomoteur en tenant compte de l’état général du patient, de ses habitudes et contextes de vie. (Profession, activité, sport…).",
-    info: "COMMENT:  Ce bilan fera l’objet d’une évaluation complète :",
+    description: "La podologie est une approche médicale relative à l’étude, la prévention, le diagnostic et la prise en charge adaptée des pathologies de l’appareil locomoteur.",
+    subtitle: "QUOI:",
+    descriptionb: "Un Bilan podologique permet une évaluation complète du système locomoteur en tenant compte de l’état général du patient, de ses habitudes et contextes de vie. (Profession, activité, sport…).",
+    subtitleb: "POURQUOI:",
+    info: "Ce bilan fera l’objet d’une évaluation complète :",
+    subtitleInfo: "COMMENT:",
     list: [
         "Analyse de l’état des pieds, de leur fonctionnalité",
         "Analyse morphostatique (pied, genoux, bassin, rachis)",
@@ -43,7 +47,7 @@ export default function RouteParams(props: PageParams<{}>) {
         <div>
             <Overlay />
 
-            <DataContainer img="/media/appareillage.webp" data={dataPodo} />
+            <DataContainer img="/media/podo2.webp" data={dataPodo} />
 
             <DataContainer img="/media/podologie.webp" data={dataPodob} />
 

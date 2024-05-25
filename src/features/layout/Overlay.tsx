@@ -67,7 +67,7 @@ const Overlay = () => {
         transition: 'opacity 0.15s ease-in',
       }}
     >
-      <Card className='flex flex-col items-center justify-center mx-auto px-20 md:px-60 py-20 bg-opacity'>
+      <Card className='flex flex-col items-center justify-center mx-auto px-20 md:px-60 py-20 bg-opacity w-full md:w-1/3'>
         {pathname === '/' ?
           <div>
             <CardTitle className='text-3xl font-bold text-customColor uppercase m-4 text-center'>Veronique Gros Hourdry</CardTitle>

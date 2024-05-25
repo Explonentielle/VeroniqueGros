@@ -35,7 +35,7 @@ export default function RouteParams(props: PageParams<{}>) {
         <div>
             <Overlay />
 
-            <DataContainer img="/media/appareillage.webp" data={dataPedi} />
+            <DataContainer img="/media/pedicurie.webp" data={dataPedi} />
 
             <AvisClients />
 

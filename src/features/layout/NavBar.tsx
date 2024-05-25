@@ -23,9 +23,9 @@ export function NavBar() {
                 className={cn("mr-6", {
                     hidden: !menuOpen,
                     block: menuOpen,
-                    "md:block absolute top-0 right-0 md:left:0 md:relative h-full bg-background": true,
+                    "md:block absolute top-0 -right-6 md:left:0 md:relative h-full bg-background": true,
                 })} >
-                <NavigationMenuList className="max-w-[90vw] flex flex-wrap">
+                <NavigationMenuList className="flex flex-wrap bg-background px-6">
                     <NavigationMenuItem>
                         <Link href="/" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -62,8 +62,8 @@ export function NavBar() {
                                     discipline étudiant la position et l’équilibre de l’homme debout
                                     en statique et en mouvement.
                                 </ListItem>
-                                <ListItem href="/Podo-pédiatrie" title="Podo-pédiatrie ">
-                                    Podo-pédiatrie
+                                <ListItem href="/podo-pediatrie" title="Podo-pédiatrie ">
+                                    La prise en charge particulière évolue à chaque étape de la croissance de votre enfant.
                                 </ListItem>
                             </ul>
                         </NavigationMenuContent>
@@ -77,7 +77,7 @@ export function NavBar() {
                                     <NavigationMenuLink asChild>
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                            href="/pedicure"
+                                            href="/pedicurie"
                                         >
                                             <div className="mb-2 text-lg font-medium">
                                                 Pédicure
