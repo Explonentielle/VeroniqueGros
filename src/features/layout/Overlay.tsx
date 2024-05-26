@@ -78,7 +78,7 @@ const Overlay = () => {
           <CardTitle className='text-3xl font-bold text-customColor uppercase m-4'>{cleanPathname(pathname)}</CardTitle>
         }
         <CardDescription>
-          <Button variant={'default'}><Link target="blank" href="https://www.doctolib.fr/pedicure-podologue/armentieres/veronique-hourdry/booking/places?specialityId=8&telehealth=false&bookingFunnelSource=profile">prendre rendez vous</Link></Button>
+          <Button variant={'default'}><Link aria-label="doctolib" target="blank" href="https://www.doctolib.fr/pedicure-podologue/armentieres/veronique-hourdry/booking/places?specialityId=8&telehealth=false&bookingFunnelSource=profile">prendre rendez vous</Link></Button>
         </CardDescription>
       </Card>
     </div>

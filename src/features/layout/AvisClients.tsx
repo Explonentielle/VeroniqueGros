@@ -27,6 +27,12 @@ const reviews = [
         body: "Trés podologue très sérieux et à l'écoute de ses patients. Très satisfait des résultats, je recommande fortement ce podologue très compétent qui a permis à mon fils de faire sa compétition . Un grand merci à elle .",
         img: "https://lh3.googleusercontent.com/a-/ALV-UjWf5nSEUKrI0_llaVgv9ojOK8Dng7zyC99p8QqxDcj4UB_-luO8=s64-c-rp-mo-br100",
     },
+    {
+        name: "Alex de Bonnieres",
+        username: "@Alex de Bonnieres",
+        body: "Professionnelle et à l'écoute, elle a su diagnostiquer et traiter mes douleurs rapidement. Je suis très satisfaite de ses services et je la recommande vivement.",
+        img: "https://lh3.googleusercontent.com/a/ACg8ocLaqOaRXxoiGAgWTbyp2RJxMRdU4nStLGSe6tGb7cEAteF90UfLU16HY1fXCgtp-rhrQLt12sksJJE565BQsCl6vMriPFs=s32",
+    },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);

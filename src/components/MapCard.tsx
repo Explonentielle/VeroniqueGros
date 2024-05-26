@@ -34,7 +34,7 @@ export const MapCard: FC<MapCardProps> = ({ title, info, adress, iframe, classNa
                     {adress}
                 </p>
                 
-                <Button className="my-4" variant={'outline'}><Link target="blank" href="https://www.doctolib.fr/pedicure-podologue/armentieres/veronique-hourdry/booking/places?specialityId=8&telehealth=false&bookingFunnelSource=profile">prendre rendez vous</Link></Button>
+                <Button className="my-4" variant={'outline'}><Link target="blank" aria-label="doctolib" href="https://www.doctolib.fr/pedicure-podologue/armentieres/veronique-hourdry/booking/places?specialityId=8&telehealth=false&bookingFunnelSource=profile">prendre rendez vous</Link></Button>
             </div>
         </div>
     );

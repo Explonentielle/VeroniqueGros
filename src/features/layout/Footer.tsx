@@ -17,13 +17,13 @@ export const Footer = () => {
             <footer className="flex flex-col md:flex-row items-center justify-between w-full h-full md:h-[10vh] border-t border-border bg-customColor dark:bg-background mt-6 px-6 md:px-36">
                 <div className="flex">
                     <p className="text-background dark:text-white mr-4">© 2024 Tous droits réservés</p>
-                    <Link className="text-background dark:text-white underline" target="_blank" href="https://debonnieresalexandre.vercel.app/">AdbDev</Link>
+                    <Link aria-label="AdbDev" className="text-background dark:text-white underline" target="_blank" href="https://debonnieresalexandre.vercel.app/">AdbDev</Link>
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center justify-around">
                     <Button variant={"link"} onClick={toggleSiteMap} className="text-background dark:text-white underline mx-6">Plan du site</Button>
-                    <Button variant={"link"}><Link className="text-background dark:text-white underline mx-6" href="/legal-notice">Mentions légales</Link></Button>
-                    <Button variant={"link"}><Link className="text-background dark:text-white underline mx-6" href="/privacy-policy">Politique de confidentialité</Link></Button>
+                    <Button variant={"link"}><Link aria-label="Mentions légales" className="text-background dark:text-white underline mx-6" href="/legal-notice">Mentions légales</Link></Button>
+                    <Button variant={"link"}><Link aria-label="Politique de confidentialité" className="text-background dark:text-white underline mx-6" href="/privacy-policy">Politique de confidentialité</Link></Button>
                 </div>
             </footer>
         </div>

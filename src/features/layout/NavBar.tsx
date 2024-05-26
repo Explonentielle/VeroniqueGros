@@ -27,7 +27,7 @@ export function NavBar() {
                 })} >
                 <NavigationMenuList className="flex flex-wrap bg-background px-6">
                     <NavigationMenuItem>
-                        <Link href="/" legacyBehavior passHref>
+                        <Link href="/" legacyBehavior passHref aria-label="accueil">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Accueil
                             </NavigationMenuLink>
@@ -43,6 +43,7 @@ export function NavBar() {
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                             href="/podologie"
+                                            aria-label="podologie"
                                         >
                                             <div className="mb-2 text-lg font-medium">
                                                 Podologie
@@ -58,11 +59,11 @@ export function NavBar() {
                                     La podologie du sport est une spécialité de la podologie qui se concentre
                                     sur le traitement et la prévention des blessures en lien avec la pratique sportive.
                                 </ListItem>
-                                <ListItem href="/posturologie" title="Posturologie ">
+                                <ListItem href="/posturologie" title="Posturologie " aria-label="podologie">
                                     discipline étudiant la position et l’équilibre de l’homme debout
                                     en statique et en mouvement.
                                 </ListItem>
-                                <ListItem href="/podo-pediatrie" title="Podo-pédiatrie ">
+                                <ListItem href="/podo-pediatrie" title="Podo-pédiatrie " aria-label="podologie">
                                     La prise en charge particulière évolue à chaque étape de la croissance de votre enfant.
                                 </ListItem>
                             </ul>
@@ -78,6 +79,7 @@ export function NavBar() {
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                             href="/pedicurie"
+                                            aria-label="pedicurie"
                                         >
                                             <div className="mb-2 text-lg font-medium">
                                                 Pédicure
@@ -88,10 +90,10 @@ export function NavBar() {
                                         </a>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/pedicurie" title="Pédicure">
+                                <ListItem href="/pedicurie" title="Pédicure" aria-label="Pédicure">
                                     Quand et pourquoi consulter un pédicure podologue ?
                                 </ListItem>
-                                <ListItem href="/pedicurie" title="Prise en charge des patients diabétiques">
+                                <ListItem href="/pedicurie" title="Prise en charge des patients diabétiques" aria-label="Pédicure">
                                     Soins patients diabétiques.
                                 </ListItem>
                             </ul>
@@ -107,6 +109,7 @@ export function NavBar() {
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                             href="/appareillage"
+                                            aria-label="appareillage"
                                         >
                                             <div className="mb-2 text-lg font-medium">
                                                 Appareillages
@@ -117,10 +120,10 @@ export function NavBar() {
                                         </a>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/appareillage#orthonyxie" title="Orthonyxie">
+                                <ListItem href="/appareillage#orthonyxie" title="Orthonyxie" aria-label="appareillage">
                                     Orthonyxie,  Orteils en griffes, ongles déformés.
                                 </ListItem>
-                                <ListItem href="/appareillage#orthoplastie" title="Orthoplastie">
+                                <ListItem href="/appareillage#orthoplastie" title="Orthoplastie" aria-label="appareillage" >
                                     Orthoplastie, cors douloureux,  incarnés.
                                 </ListItem>
                             </ul>
@@ -136,6 +139,7 @@ export function NavBar() {
                                         <a
                                             className="flex h-full w-full select-none flex-col justify-between items-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                             href="/cabinet#parcour"
+                                            aria-label="cabinet"
                                         >
                                             <div className="mb-2 text-lg font-medium">
                                                 Mon parcours
@@ -146,10 +150,10 @@ export function NavBar() {
                                         </a>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/cabinet#armentieres" title="Cabinet d’Armentières">
+                                <ListItem href="/cabinet#armentieres" title="Cabinet d’Armentières" aria-label="Cabinet d’Armentières">
                                     78 rue Saidi Carnot 59 280 ARMENTIERE
                                 </ListItem>
-                                <ListItem href="/cabinet#sailly" title="Cabinet de Sailly sur la Lys">
+                                <ListItem href="/cabinet#sailly" title="Cabinet de Sailly sur la Lys" aria-label="Cabinet de Sailly">
                                     2390 rue de la lys 62 840 SAILLY SUR LA LYS
                                 </ListItem>
                             </ul>
@@ -161,7 +165,7 @@ export function NavBar() {
             </NavigationMenu>
 
             <div className="md:hidden flex items-center">
-                <Button onClick={toggleMenu} variant={'ghost'} className="p-2">
+                <Button onClick={toggleMenu} variant={'ghost'} className="p-2" aria-label="menu">
                     {menuOpen ? <Cross className="absolute top-10 right-5 rotate-45 h-6 w-6 z-10" /> : <Menu className="h-6 w-6" />}
                 </Button>
             </div>

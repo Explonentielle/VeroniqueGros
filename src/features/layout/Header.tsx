@@ -29,12 +29,12 @@ export const Header = () => {
     <header className="fixed top-0 w-full border-b border-border px-4 bg-background z-50">
       <Layout className="flex py-0 flex-row items-center gap-4">
         <div className="flex-1">
-          <Link className="flex items-center" href={"/"}>
+          <Link className="flex items-center" href={"/"} aria-label="Accueil">
             <Image
               width={imageSize} 
               height={imageSize} 
               src="/media/icon.png"
-              alt="MateFinder logo"
+              alt="logo"
             />
             <h2 className="pl-2 text-customColor text-xs md:text-xl iconBorder">
               Veronique Gros Hourdry

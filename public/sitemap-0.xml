@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://veronique-gros.vercel.app/robots.txt</loc><lastmod>2024-05-21T13:08:37.119Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app/posturologie</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app/appareillage</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app/podologie</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app/podologie-du-sport</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app/contact</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app/cabinet</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://veronique-gros.vercel.app/pedicurie</loc><lastmod>2024-05-21T13:08:37.120Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/robots.txt</loc><lastmod>2024-05-26T18:35:28.633Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/appareillage</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/podologie-du-sport</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/posturologie</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/podologie</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/privacy-policy</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/cabinet</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/podo-pediatrie</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/legal-notice</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://veronique-gros.vercel.app/pedicurie</loc><lastmod>2024-05-26T18:35:28.634Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

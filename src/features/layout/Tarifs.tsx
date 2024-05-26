@@ -31,7 +31,7 @@ const features = [
         descriptionc: "Conventionné par la sécurité social pour les soins de pédicurie pour les diabétiques.",
         href: "/appareillage",
         cta: "Learn more",
-        background: <img src="/media/appareillage.webp" className="absolute h-full opacity-20" />,
+        background: <img src="/media/orthoplastie.jpg" className="absolute h-full opacity-20" />,
         className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-3",
     },
     {
