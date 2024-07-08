@@ -23,14 +23,14 @@ const WavyText = ({
     delay = 0.02,
 }: WavyTextProps) => {
     const defaultVariants = {
-        hidden: { y: 10 },
+        hidden: { y: 1 },
         visible: { y: -10 },
     };
     const combinedVariants = variant || defaultVariants;
     const characters = useMemo(() => word.split(""), [word]);
     return (
         <div className="overflow-hidden p-2">
-            <div className="flex justify-center space-x-2">
+            <div className="flex justify-center space-x-1">
                 <AnimatePresence>
                     {characters.map((char, i) => (
                         <motion.h1
@@ -46,7 +46,7 @@ const WavyText = ({
                             }}
                             className={cn(
                                 className,
-                                "font-display text-center text-sm font-bold tracking-[-0.1em] md:text-3xl",
+                                "font-display text-center text-xs font-bold tracking-[-0.1em] md:text-3xl",
                             )}
                         >
                             {char}
