@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: "podologue, soins du pied, podologie, podologue Carnot",
   robots: "index, follow",
   alternates: {
-    canonical: "https://www.podologuecarnot.fr/",
+    canonical: "https://veronique-gros.vercel.app/",
   },
   other: {
     "google-site-verification": "7HwvouvbIjXOtewjqrtCmSq0B_J5goy2E4ihR-VL0Q0",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Podologue Carnot - Services de Podologie",
     description: "Découvrez les services de podologie offerts par Podologue Carnot, spécialisés en soins du pied.",
-    url: "https://www.podologuecarnot.fr/",
+    url: "https://veronique-gros.vercel.app/",
     type: "website",
   },
 };
