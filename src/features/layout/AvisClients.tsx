@@ -33,6 +33,24 @@ const reviews = [
         body: "Professionnelle et à l'écoute, elle a su diagnostiquer et traiter mes douleurs rapidement. Je suis très satisfaite de ses services et je la recommande vivement.",
         img: "https://lh3.googleusercontent.com/a/ACg8ocLaqOaRXxoiGAgWTbyp2RJxMRdU4nStLGSe6tGb7cEAteF90UfLU16HY1fXCgtp-rhrQLt12sksJJE565BQsCl6vMriPFs=s32",
     },
+    {
+        name: "Amélie KRAJEWSKI",
+        username: "@Amélie KRAJEWSKI",
+        body: " Ma fille est suivie depuis de nombreuses années par Mme Hourdry. Nous avons toujours été bien accueilli dans son cabinet, elle est très à l'écoute de ses patients. Je recommande sans hésité Mme houdry",
+        img: "https://lh3.googleusercontent.com/a/ACg8ocI7SsmHCR6BZrxT9qc-RHq1R9GSGUv36sQdl_T-9-o5prxHeg=s64-c-rp-mo-br100",
+    },
+    {
+        name: "Pierre Paniez",
+        username: "@Pierre Paniez",
+        body: "Efficace et rapide dans sa fonction ! Merci Madame Hourdry.",
+        img: "https://lh3.googleusercontent.com/a-/ALV-UjVmRjDdI3_v5UX3CKidF_j7DEl9lagUHQb5XxtRnT9ZRc_Fe2FJ=s64-c-rp-mo-ba4-br100",
+    },
+    {
+        name: "Aurélie Valmage",
+        username: "@Aurélie Valmage",
+        body: "Super podologue",
+        img: "https://lh3.googleusercontent.com/a/ACg8ocI7SsmHCR6BZrxT9qc-RHq1R9GSGUv36sQdl_T-9-o5prxHeg=s64-c-rp-mo-br100",
+    },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
@@ -42,13 +60,17 @@ const secondRow = reviews.slice(reviews.length / 2);
 export const AvisClients = () => {
     return (
         <div className="flex flex-col-reverse items-center">
-            <div className="relative flex h-full w-full md:w-2/3 flex-col items-center justify-center overflow-hidden bg-background mx-auto py-20 ">
-                <Marquee pauseOnHover className="[--duration:20s]">
+            <div className="relative flex h-full w-full md:w-2/3 flex-col items-center justify-center overflow-hidden bg-background mx-auto py-6 pt-16">
+                <Marquee pauseOnHover className="[--duration:30s]">
                     {firstRow.map((review) => (
                         <ReviewCard key={review.username} {...review} />
                     ))}
                 </Marquee>
-                <Marquee reverse pauseOnHover className="[--duration:20s]">
+
+                <br />
+                <br />
+
+                <Marquee reverse pauseOnHover className="[--duration:30s]">
                     {secondRow.map((review) => (
                         <ReviewCard key={review.username} {...review} />
                     ))}
@@ -58,7 +80,7 @@ export const AvisClients = () => {
             </div>
 
             <div className="pt-5">
-                <LayoutTitle className="my-10 text-primary text-center uppercase">Avis clients</LayoutTitle>
+                <LayoutTitle className="mt-10 text-primary text-center uppercase">Avis clients</LayoutTitle>
             </div>
         </div>
     );

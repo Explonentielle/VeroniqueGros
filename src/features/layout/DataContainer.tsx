@@ -3,7 +3,9 @@ import { Layout, LayoutTitle } from "@/src/components/Layout"
 
 type MapCardProps = {
     withImg?: boolean;
+    withImg2?: boolean;
     img: string;
+    img2?: string;
     data: {
         title: string;
         subtitle?: string,
@@ -18,18 +20,17 @@ type MapCardProps = {
     };
 }
 
-export const DataContainer = async ({ img, data, withImg = true }: MapCardProps) => {
+export const DataContainer = async ({ img, img2 = "", data, withImg = true, withImg2 = false }: MapCardProps) => {
 
     return (
         <Layout className="items-center">
 
             <div className={`mt-10 flex flex-col-reverse ${data.className} items-center `}>
 
-                {withImg ? <img
+                {withImg2 ? null : withImg ? <img
                     alt="thumbnail"
                     className="w-full md:w-[40vw] h-auto max-h-[35vh] md:mx-12 rounded-lg"
                     src={img} /> : null}
-
 
                 <DataCard
                     title={data.title}
@@ -41,7 +42,21 @@ export const DataContainer = async ({ img, data, withImg = true }: MapCardProps)
                     info={data.info}
                     list={data.list}
                 />
+            </div>
 
+            <br />
+            
+            <div className="flex flex-col md:flex-row">
+
+                {!withImg2 ? null : withImg ? <img
+                    alt="thumbnail"
+                    className="w-full md:w-[40vw] h-auto max-h-[35vh] md:mx-12 rounded-lg my-10 md:my-0"
+                    src={img} /> : null}
+
+                {withImg2 ? <img
+                    alt="thumbnail"
+                    className="w-full md:w-[40vw] h-auto max-h-[35vh] md:mx-12 rounded-lg"
+                    src={img2} /> : null}
             </div>
 
         </Layout>
