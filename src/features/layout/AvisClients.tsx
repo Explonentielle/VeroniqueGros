@@ -6,7 +6,7 @@ const reviews = [
     {
         name: "Wake59",
         username: "Wake59",
-        body: " Tres bon podologue, personne al écoute, fais du tres bon travail. ",
+        body: " Tres bon podologue, personne a l écoute, fais du tres bon travail. ",
         img: "https://avatar.vercel.sh/jack",
     },
     {
