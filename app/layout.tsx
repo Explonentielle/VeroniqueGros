@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Podologue Carnot",
     images: [
       {
-        url: "https://veronique-gros.vercel.app/icon.png",
+        url: "https://veronique-gros.vercel.app/logo.png",
         width: 1200,
         height: 630,
         alt: "Podologue Carnot - Services de Podologie",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Véronique Gros - Podologue Carnot | Expert en Podologie",
     description: "Services spécialisés de podologie, incluant posturologie et soins de pédicurie à Armentières.",
     images: {
-      url: "https://veronique-gros.vercel.app/icon.png",
+      url: "https://veronique-gros.vercel.app/logo.png",
       width: 1200,
       height: 630,
       alt: "Podologue Carnot - Vue d'ensemble du cabinet",
@@ -58,7 +58,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="fr" className="h-full ">
       <head>
-        <link rel="icon" href="http://localhost:3000/logo.png" type="image/png" />
+        <link rel="icon" href="https://veronique-gros.vercel.app/logo.png" type="image/png" />
       </head>
       <body cz-shortcut-listen="true" className={cn(inter.className, 'h-full')}>
         <Suspense fallback={<Loading />}>
