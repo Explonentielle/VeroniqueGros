@@ -12,7 +12,7 @@ const features = [
         descriptionc: "Conventionné par la sécurité social pour les soins de pédicurie pour les diabétiques.",
         href: "/pedicurie",
         cta: "Learn more",
-        background: <img src="/media/pedicurie.webp" className="absolute h-full opacity-20" />,
+        background: <img src="/media/pourquoi.webp" className="absolute h-full opacity-20" />,
         className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3",
     },
     {
@@ -43,7 +43,7 @@ const features = [
         txtColor: "light",
         href: "/cabinet",
         cta: "Learn more",
-        background: <img className=" absolute -right-20 -top-20 opacity-60" />,
+        background: "",
         className: "bg-customColor lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2",
     },
     // {
@@ -64,7 +64,7 @@ const features = [
         txtColor: "light",
         href: "/cabinet",
         cta: "Learn more",
-        background: <img className="absolute -right-20 -top-20 opacity-60" />,
+        background: "",
         className: "bg-primary text-background lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-4",
     },
     {
@@ -75,7 +75,7 @@ const features = [
         txtColor: "light",
         href: "/cabinet",
         cta: "Learn more",
-        background: <img className="absolute -right-20 -top-20 opacity-60" />,
+        background:"",
         className: "bg-customColor text-background lg:col-start-1 lg:col-end-3 lg:row-start-3 lg:row-end-4",
     },
 ];
