@@ -27,7 +27,7 @@ const features = [
     },
     {
         Icon: BriefcaseMedical ,
-        name: "Petit appareillage :",
+        name: "PETIT APPAREILLAGE :",
         description: "Orthoplastie : 40 à 70€",
         descriptionb: "Orthonyxie : 45€ ",
         descriptionc: "Variable selon le nombres de montage ou d'orteille traité.",
