@@ -93,7 +93,7 @@ export function NavBar() {
                                 <ListItem href="/pedicurie" title="Pédicure" aria-label="Pédicure">
                                     Quand et pourquoi consulter un pédicure podologue ?
                                 </ListItem>
-                                <ListItem href="/pedicurie" title="Prise en charge des patients diabétiques" aria-label="Pédicure">
+                                <ListItem href="/pedicurie#diabete" title="Prise en charge des patients diabétiques" aria-label="Pédicure">
                                     Soins patients diabétiques.
                                 </ListItem>
                             </ul>

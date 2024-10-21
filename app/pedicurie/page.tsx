@@ -32,8 +32,8 @@ const dataPedi =
 
 const dataPedib =
 {
-    title: "Pourquoi consulter un Pédicure Podologue ?",
-    description: "Prise en charge des patients diabétiques Votre podologue est agréée pour votre prise en charge. 1 bilan initial permettant la gradation de votre diabète et la prescription de séances de soin sera établi, et transmis à votre médecin.",
+    title: "Prise en charge des patients diabétiques ?",
+    description: "Votre podologue est agréée pour votre prise en charge. 1 bilan initial permettant la gradation de votre diabète et la prescription de séances de soin sera établi, et transmis à votre médecin.",
     descriptionb: "Seron réalisé alors à chaque séance des soins adaptés avec un crontrol particulier de l'état cutané vasculaire de vos pieds, ainsi que conseil de chaussures afin de minimiser tous risques de blessure.",
     info: "Votre podologue vous apprendra à faire un auto controle de vos pieds et chaussures, ainsi que préserver une hygienne parfaite de vos pieds.",
     className: "md:flex-row",
@@ -50,7 +50,7 @@ export default function RouteParams(props: PageParams<{}>) {
 
             <DataContainer img="/media/pedicurie.webp" data={dataPedi} />
 
-            <DataContainer img="/media/pedicurie.webp" data={dataPedib} />
+            <DataContainer img="media/pourquoi.webp" data={dataPedib} />
 
             <AvisClients />
 
