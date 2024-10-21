@@ -10,7 +10,7 @@ import type { PageParams } from "@/src/types/next";
 const dataApp =
 {
     title: "LES DIFFERENTS APPAREILLAGES :",
-    description: "Votre pédicure podologue, à partir d’un diagnostic préalablement établi aura toute compétence pour traiter les affections épidermiques et unguéales du pied, et vous conseiller sur les bonnes pratiques en fonction de chaque pathologie.",
+    description: "Votre pédicure podologue, à partir d’un diagnostic préalablement établi tel que ongles incarnés ou anomalie de courbure des ongles, pourra vous proposez la pose d'agrafes de correction",
     subtitle: "L'ORTHONYXIE :",
     descriptionb: "L'orthonyxie est une technique de podologie qui permet de corriger les courbures unguéales (ongles) à l'aide d'une orthèse d'ongle (fils en titane scéllé directemet sur l'ongle a l'aide d'une résine). Cette apppareillage utilisé par votre podologue est indolore et ne provoque aucune gêne pour le patient  :",
     subtitleb: "A QUOI SERT L'ORTHONYXIE",
@@ -26,17 +26,18 @@ const dataApp =
 const dataAppb =
 {
     title: "",
-    description: "L'orthoplastie est un appareillage qui intervient pour protéger ou corriger des orteilles (griffes, hallux valgus ...). Elle est egalement utilisé suite à une amputaion pour permettre au pied de retrouver une certaine forme d'équilibre en comblant l'espace vide. Cette orthèse s'adapte à chaque patient en fonction de sa pathologie, elle peut être utilisée pour l'adulte ou l'enfant",
+    description: "L'orthoplastie est un appareillage qui intervient pour protéger ou corriger des orteil (griffes, hallux valgus ...). Elle est également utilisée suite à une amputaion pour permettre au pied de retrouver une certaine forme d'équilibre en comblant l'espace vide. Cette orthèse s'adapte à chaque patient en fonction de sa pathologie, elle peut être utilisée pour l'adulte comme l'enfant",
     subtitle: "L'ORTHOPLASTIE :",
-    descriptionb: "L'orthonyxie est une technique de podologie qui permet de corriger les courbures unguéales (ongles) à l'aide d'une orthèse d'ongle (fils en titane scéllé directemet sur l'ongle a l'aide d'une résine). Cette apppareillage utilisé par votre podologue est indolore et ne provoque aucune gêne pour le patient  :",
+    descriptionb: " ",
+    descriptionc: "L'orthaplastie est souvent utilisée en podologie, elle a un effet :",
     subtitleb: "A QUOI SERT L'ORTHOPLASTIE",
     info: "",
-    list: [
-        "Corriger une déformation d'orteils",
-        "Soulager les conflits",
-        "Traiter les récidives de cors",
+    listb: [
+        "Protecteur permetant un soulagement immédiat de la peau et de l'articulation.",
+        "Correcteur dans le cas d'un griffe d'orteil ou d'un hallux valgus débutant.",
     ],
     className: "md:flex-row-reverse",
+    other: "Ces orthèse sont amovibles et se portent facillement dans les chaussures."
 }
 
 const dataAppc =
@@ -46,6 +47,7 @@ const dataAppc =
     descriptionb: "Le podologue réalisera une « orthoplastie » : orthèse amovible que le patient doit porter dans la journée.",
     info: "C’est une orthèse souple ou semi rigide de repositionnement d’orteils ou de protection, modelée sur le pied et façonnée en élastomère de silicone L’orthoplastie peut être protectrice (pour une griffe d’orteil irréductible) ou correctrice (pour une griffe réductible)",
     className: "md:flex-row-reverse",
+    other: ""
 }
 
 

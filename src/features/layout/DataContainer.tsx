@@ -18,7 +18,7 @@ type MapCardProps = {
         list?: string[];
         listb?: string[];
         className?: string;
-
+        other?: string;
     };
 }
 
@@ -45,6 +45,7 @@ export const DataContainer = async ({ img, img2 = "", data, withImg = true, with
                     info={data.info}
                     list={data.list}
                     listb={data.listb}
+                    other={data.other}
                 />
             </div>
 

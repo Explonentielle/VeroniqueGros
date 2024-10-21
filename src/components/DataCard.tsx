@@ -11,10 +11,11 @@ interface DataCardProps {
     descriptionb?: string;
     descriptionc?: string;
     list?: string[],
-    listb?: string[]
+    listb?: string[],
+    other?: string,
 }
 
-export const DataCard: FC<DataCardProps> = ({ title, subtitle, subtitleb, subtitleInfo, info, description, descriptionb, list, listb, descriptionc }) => {
+export const DataCard: FC<DataCardProps> = ({ title, subtitle, subtitleb, subtitleInfo, info, description, descriptionb, list, listb, descriptionc, other }) => {
     return (
         <div className="mr-0 md:mr-6">
             <LayoutTitle className="mb-12 text-primary text-center">{title}</LayoutTitle>
@@ -48,6 +49,7 @@ export const DataCard: FC<DataCardProps> = ({ title, subtitle, subtitleb, subtit
 
                 </ul> : undefined}
 
+            {other ? <p className="font-light text-xs">* {other}</p> : null}
 
         </div>
     );
