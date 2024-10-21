@@ -39,8 +39,9 @@ const dataPosturob =
 const dataPosturoc =
 {
     title: "",
-    description: "Nous vous conseillerons sur le choix de leurs chaussures",
-    descriptionb: "73% des enfants portent des chaussures trop petites",
+    description: "",
+    descriptionc: "Nous vous conseillerons sur le choix de leurs chaussures",
+    other: "73% des enfants portent des chaussures trop petites",
     info: "",
     className: "md:flex-row",
 }
@@ -56,8 +57,7 @@ export default function RouteParams(props: PageParams<{}>) {
 
             <DataContainer img="/media/server.avif" data={dataPosturob} />
 
-            <DataContainer img="" data={dataPosturoc} withImg={false} />
-
+            <DataContainer data={dataPosturoc} withImg={false} />
 
             <AvisClients />
 
