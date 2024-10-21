@@ -13,13 +13,13 @@ export const HeroBanner = () => {
         <Layout className="items-center pt-10">
             <div className="flex flex-col md:flex-row">
                 <WavyText
-                    word="Cabinet de Podologie à "
+                    word="Cabinet de Podologie à Armentières."
                     className="font-bold text-customColor dark:text-white"
                 />
-                <WavyText
-                    word="Armentières et Sailly sur la lys"
+                {/* <WavyText
+                    word="Armentières."
                     className="font-bold text-customColor dark:text-white"
-                />
+                /> */}
             </div>
 
             <p className="text-center text-lg">Fort d’une expérience de plus de 15 ans, Véronique Gros Hourdry vous accueille
