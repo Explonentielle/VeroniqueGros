@@ -42,9 +42,9 @@ export const Header = () => {
           </Link>
         </div>
         <NavBar />
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <ModeToggle />
-        </div>
+        </div> */}
       </Layout>
     </header>
   );
