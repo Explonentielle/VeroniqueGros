@@ -151,11 +151,15 @@ export function NavBar() {
                                     </NavigationMenuLink>
                                 </li>
                                 <ListItem href="/cabinet#armentieres" title="Cabinet d’Armentières" aria-label="Cabinet d’Armentières">
-                                    78 rue Saidi Carnot 59 280 ARMENTIERE
+                                <div  className="flex flex-col justify-between">
+                                    <p className="mt-2 mb-4 font-bold text-m">78 rue Saidi Carnot 59 280 ARMENTIERE</p>
+                                    <p className="my-2">06 33 48 66 53</p>
+                                    <p className="my-2">03 21 25 79 45</p>
+                                </div>
                                 </ListItem>
-                                <ListItem href="/cabinet#sailly" title="Cabinet de Sailly sur la Lys" aria-label="Cabinet de Sailly">
+                                {/* <ListItem href="/cabinet#sailly" title="Cabinet de Sailly sur la Lys" aria-label="Cabinet de Sailly">
                                     2390 rue de la lys 62 840 SAILLY SUR LA LYS
-                                </ListItem>
+                                </ListItem> */}
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
