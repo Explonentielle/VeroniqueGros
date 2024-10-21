@@ -10,17 +10,17 @@ const dataPosturo =
 {
     title: "PODOPEDIATRIE :",
     description: "Notre expertise au service des enfants.",
-    descriptionb: "Envie que nos enfants restent en bonne santé, qu’ils se développent dans les meilleures conditions ? Un bilan dès 4 ans est vivement conseillé.",
+    descriptionb: "Envie que nos enfants restent en bonne santé, qu’ils se développent dans les meilleures conditions? Un bilan dès 4 ans est vivement conseillé!",
     subtitleb: "« JE NE VEUX PLUS !!! = J’AI MAL »",
-    info: "Votre enfant subit de nombreux changement bio mécaniques au cours de san croissance et ce jusqu’à l’Age adulte. Il est donc sujet à de nombreuses contraintes parfois exacerbée par la pratique sportive.",
-    subtitleInfo: "A QUOI SERT LA POSTUROLOGIE :",
+    info: "Votre enfant subit de nombreux changements bio mécaniques au cours de sa croissance et ce jusqu’à l’age adulte. Il est donc sujet à de nombreuses contraintes parfois exacerbées par la pratique sportive trop intense.",
+    subtitleInfo: "A QUOI SERT LE BILAN DE PODOPEDIATRIE :",
     className: "md:flex-row-reverse",
 }
 
 const dataPosturob =
 {
     title: "",
-    description: "Nous vous proposons d’accompagner votre enfant tout au long de sa croissance.",
+    description: "Nous vous proposons d’accompagner votre enfant tout au long de sa croissance grâce à un bilan annuel ou biannuel complet.",
     descriptionb: "De quoi peuvent souffrir nos enfants :",
     info: "",
     className: "md:flex-row",

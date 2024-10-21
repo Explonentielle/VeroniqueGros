@@ -171,9 +171,8 @@ export function NavBar() {
             </div>
 
             <Button variant={'default'} className='hidden md:block'>
-                07 08 09 10 11
+                06 33 48 66 53
             </Button>
-
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { Layout, LayoutTitle } from "@/src/components/Layout"
 type MapCardProps = {
     withImg?: boolean;
     withImg2?: boolean;
-    img: string;
+    img?: string;
     img2?: string;
     data: {
         title: string;
@@ -14,7 +14,9 @@ type MapCardProps = {
         info: string;
         description: string;
         descriptionb?: string;
+        descriptionc?: string;
         list?: string[];
+        listb?: string[];
         className?: string;
 
     };
@@ -39,8 +41,10 @@ export const DataContainer = async ({ img, img2 = "", data, withImg = true, with
                     subtitleInfo={data.subtitleInfo}
                     description={data.description}
                     descriptionb={data.descriptionb}
+                    descriptionc={data.descriptionc}
                     info={data.info}
                     list={data.list}
+                    listb={data.listb}
                 />
             </div>
 

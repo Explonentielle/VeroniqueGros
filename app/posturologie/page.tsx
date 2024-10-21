@@ -23,14 +23,14 @@ const dataPosturob =
     description: "Tout arrive par un défaut de posture qui engendre des contraintes musculaires au niveau des articulations. Ce sont nos contractures musculaires qui sont douloureuses.",
     subtitle: "COMMENT CELA FONCTIONNE ? :",
     descptionb: "C’est donc parce que nous nous tenons mal que ces contractures et nos douleurs arrivent.",
-    info: "Un mauvais fonctionnement de la mécanique musculaire de nos pieds , de l’œil et de la mâchoire, des dents, des cicatrices, un dysfonctionnement de la 1 ère cervicale et enfin de notre sphère émotionnelle entrainera un déséquilibre de notre posture, des tensions musculaires et l’arrivée de douleurs chroniques",
+    info: "Un mauvais fonctionnement de la mécanique musculaire de nos pieds , de l’œil et de la mâchoire, des dents, des cicatrices, un dysfonctionnement de la 1ère cervicale et enfin de notre sphère émotionnelle entrainera un déséquilibre de notre posture, des tensions musculaires et l’arrivée de douleurs chroniques",
     className: "md:flex-row",
 }
 
 const dataPosturoc =
 {
     title: "",
-    description: "Dès l’Age de 4 ans et avant 9 ans surtout en cas de difficultés scolaires Adolescents de 11 à 17 ans (dépistage scoliose) Adulte : dès les 1 ers symptômes d’une douleur mécanique articulaire, vertiges, instabilité, céphalées, fatigue chronique, troubles du sommeil, difficulté de concentration …",
+    description: "Dès l’Age de 4 ans et avant 9 ans, surtout en cas de difficultés scolaires Adolescents de 11 à 17 ans (dépistage scoliose); Adulte dès les 1ers symptômes d’une douleur mécanique articulaire, vertiges, instabilité, céphalées, fatigue chronique, troubles du sommeil, difficulté de concentration …",
     subtitle: "POUR QUI ?",
     descptionb: "Un bilan complet permettra la rééquilibration de votre posture et la libération des contraintes et donc de vos douleurs :",
     subtitleb: "COMMENT :",
@@ -39,8 +39,13 @@ const dataPosturoc =
     list: [
         "Bilan morphostatique",
         "Test d’équilibration",
-        "Enregistrement sur plateforme de vos oscillations",
-        "Testing des différentes entrées sensorielles (œil et mâchoire, oreille interne) A l’issu du bilan :",
+        "Enregistrement sur plateforme de vos oscillations et de la marche.",
+        "Testing des différentes entrées sensorielles (œil et mâchoire, oreille interne). A l’issu du bilan :",
+        "Réalisation d’orthèses plantaires de reprogrammation posturale",
+        "Orientation orthoptiste, ostéopathe, occluso dentiste",
+    ],
+    descriptionc: "A l’issu du bilan :",
+    listb: [
         "Réalisation d’orthèses plantaires de reprogrammation posturale",
         "Orientation orthoptiste, ostéopathe, occluso dentiste",
     ]

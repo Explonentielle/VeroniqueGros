@@ -80,7 +80,7 @@ export const AvisClients = () => {
             </div>
 
             <div className="pt-5">
-                <LayoutTitle className="mt-10 text-primary text-center uppercase">Avis clients</LayoutTitle>
+                <LayoutTitle className="mt-10 text-primary text-center uppercase">Avis patients</LayoutTitle>
             </div>
         </div>
     );

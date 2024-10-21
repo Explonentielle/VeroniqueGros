@@ -10,8 +10,8 @@ import { Diplomes } from "@/src/features/layout/Diplomes";
 const dataCabinet =
 {
     title: "LE CABINET D'ARMENTIERES",
-    description: "1 espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du sport , Posturologie et Pédicurie",
-    descriptionb: "78 rue Saidi Carnot 59280 ARMENTIERES tel 0633486653",
+    description: "1 espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du sport , Posturologie et Pédicurie.",
+    descriptionb: "78 rue Sadi Carnot 59280 ARMENTIERES tel 03 20 35 78 11.",
     info: "Horaires Du Lundi au Vendredi de 8h à 19h Sur rendez-vous uniquement Soins à domicile possible",
     className: "md:flex-row-reverse",
 }
@@ -19,7 +19,7 @@ const dataCabinet =
 const dataCabinetb =
 {
     title: "LE CABINET DE SAILLY",
-    description: "1 espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du sport , Posturologie et Pédicurie",
+    description: "1 espace dédié pour une prise en charge adaptée et de qualité en Podologie, Podologie du sport , Posturologie et Pédicurie.",
     descriptionb: "2390 rue de la lys 62 840 SAILLY SUR LA LYS",
     info: "Horaires Du Lundi au Vendredi de 8h à 19h Sur rendez-vous uniquement Soins à domicile possible",
     className: "md:flex-row",
@@ -49,11 +49,10 @@ export default function RouteParams(props: PageParams<{}>) {
             <Overlay />
 
             <br />
-            <br />
 
-            <section id="sailly">
+            {/* <section id="sailly">
                 <DataContainer img="/media/sailly.png" data={dataCabinetb} />
-            </section>
+            </section> */}
 
             <section id="armentieres">
                 <DataContainer img2="/media/cabinetarm.jpeg" img="/media/images/cabinet1.jpeg" withImg2={true} data={dataCabinet} />
@@ -62,7 +61,7 @@ export default function RouteParams(props: PageParams<{}>) {
             <br />
 
             <section id="parcour">
-                <DataContainer img="/media/images/cabinet.jpeg" data={dataCabinetc} />
+                <DataContainer img="/media/images/cabinet.jpeg" withImg={false} data={dataCabinetc} />
             </section>
 
             <Diplomes />
