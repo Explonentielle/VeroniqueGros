@@ -13,7 +13,7 @@ export const HeroBanner = () => {
         <Layout className="items-center pt-10">
             <div className="flex flex-col md:flex-row">
                 <WavyText
-                    word="Cabinet de Podologie à Armentières."
+                    word="Cabinet de Podologie à Armentières"
                     className="font-bold text-customColor dark:text-white"
                 />
                 {/* <WavyText
