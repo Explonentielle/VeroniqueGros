@@ -36,7 +36,7 @@ export const DataCard: FC<DataCardProps> = ({ title, subtitle, subtitleb, subtit
 
                 </ul> : undefined}
 
-            {descriptionc ? <p className="my-4 ">{descriptionc}</p> : null}
+            {descriptionc ? <p className="my-4 font-bold">{descriptionc}</p> : null}
 
             {listb ?
                 <ul className="flex flex-col w-2/3 justify-start my-6">
